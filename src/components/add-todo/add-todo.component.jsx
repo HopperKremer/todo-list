@@ -24,7 +24,7 @@ class AddTodo extends React.Component {
         }
         const addTodo = (e) => {
             addItem({text: this.state.text, id: Math.ceil(Math.random()*100)})
-            alert('Todo added.')
+            setTimeout(() => { alert('Todo added.') }, 1);
         }
         
         const item = {

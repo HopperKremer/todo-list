@@ -5,7 +5,15 @@ const HomePage = ({listItems}) => {
 
     return(
     <div className='homepage'>
-        Welcome, you have {listItems.length} things to do
+        {
+        listItems.length == 0 ?
+        <div>Welcome, you have nothing to do yet, click TODO LIST above to add some things. </div>
+        :
+        listItems.length == 1 ?
+        <div>Welcome, you have {listItems.length} thing to do</div>
+        :
+        <div>Welcome, you have {listItems.length} things to do</div>
+        }
     </div>
     )
 }
