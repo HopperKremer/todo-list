@@ -60,8 +60,6 @@ that is forwarded to that input element. Finish the Focusablelnput component:
 focused, it should receive the focus.
 *If on mounting the focused prop is true, the input should receive the focus.
 */
-// React is loaded and is available as React and ReactDOM
-// imports should NOT be used
 class Input extends React.PureComponent {
     render() {
       let {forwardedRef, ...otherProps} = this.props; 
@@ -107,7 +105,13 @@ class Input extends React.PureComponent {
 
 
 
-
+// The Message component contains an anchor element and a paragraph below the
+// anchor. Rendering of the paragraph should be toggled by clicking on the anchor
+// element using the following logic:
+// • At the start, the paragraph should not be rendered.
+// • After a click, the paragraph should be rendered.
+// • After another click, the paragraph should not be rendered.
+// Finish the Message component by implementing this logic.
 // React is loaded and is available as React and ReactDOM
 // imports should NOT be used
 class Message extends React.Component {
