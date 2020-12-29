@@ -1,0 +1,54 @@
+22:49:22	Cloning github.com/HopperKremer/todo-list (Branch: master, Commit: 579cca9)
+22:49:23	Cloning completed in 378ms
+22:49:23	Analyzing source code...
+22:49:24	Installing build runtime...
+22:49:25	Build runtime installed: 507.435ms
+22:49:25	Looking up build cache...
+22:49:25	Build cache not found
+22:49:26	Installing dependencies...
+22:50:00	> core-js@2.6.12 postinstall /vercel/workpath0/node_modules/babel-runtime/node_modules/core-js
+22:50:00	> node -e "try{require('./postinstall')}catch(e){}"
+22:50:00	> core-js@3.8.1 postinstall /vercel/workpath0/node_modules/core-js
+22:50:00	> node -e "try{require('./postinstall')}catch(e){}"
+22:50:00	> core-js-pure@3.8.1 postinstall /vercel/workpath0/node_modules/core-js-pure
+22:50:00	> node -e "try{require('./postinstall')}catch(e){}"
+22:50:00	> ejs@2.7.4 postinstall /vercel/workpath0/node_modules/ejs
+22:50:00	> node ./postinstall.js
+22:50:02	npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/webpack-dev-server/node_modules/fsevents):
+22:50:02	npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+22:50:02	npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.13 (node_modules/watchpack-chokidar2/node_modules/fsevents):
+22:50:02	npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.13: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+22:50:02	npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.2.1 (node_modules/fsevents):
+22:50:02	npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.2.1: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+22:50:02	npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules/chokidar/node_modules/fsevents):
+22:50:02	npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+22:50:02	added 1949 packages from 788 contributors in 35.875s
+22:50:04	123 packages are looking for funding
+22:50:04	  run `npm fund` for details
+22:50:04	Running "npm run build"
+22:50:04	> todo-list@0.1.0 build /vercel/workpath0
+22:50:04	> react-scripts build
+22:50:06	Creating an optimized production build...
+22:50:18	Treating warnings as errors because process.env.CI = true.
+22:50:18	Most CI servers set it automatically.
+22:50:18	Failed to compile.
+22:50:18	src/components/add-todo/add-todo.component.jsx
+22:50:18	  Line 4:19:   'removeItem' is defined but never used        no-unused-vars
+22:50:18	  Line 23:13:  Do not mutate state directly. Use setState()  react/no-direct-mutation-state
+22:50:18	  Line 30:15:  'item' is assigned a value but never used     no-unused-vars
+22:50:18	src/components/todolist/todolist.component.jsx
+22:50:18	  Line 7:9:  'todo' is assigned a value but never used             no-unused-vars
+22:50:18	  Line 8:9:  'handleItemClick' is assigned a value but never used  no-unused-vars
+22:50:18	src/redux/todo-list/todo-list.reducer.js
+22:50:18	  Line 2:25:  'removeItemFromList' is defined but never used  no-unused-vars
+22:50:18	npm ERR! code ELIFECYCLE
+22:50:18	npm ERR! errno 1
+22:50:18	npm ERR! todo-list@0.1.0 build: `react-scripts build`
+22:50:18	npm ERR! Exit status 1
+22:50:18	npm ERR! 
+22:50:18	npm ERR! Failed at the todo-list@0.1.0 build script.
+22:50:18	npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+22:50:18	npm ERR! A complete log of this run can be found in:
+22:50:18	npm ERR!     /vercel/.npm/_logs/2020-12-29T03_50_18_357Z-debug.log
+22:50:18	Error: Command "npm run build" exited with 1
+22:50:22	Done with "package.json"
